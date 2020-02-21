@@ -1,0 +1,2 @@
+# SyncIdeaSettings
+sync idea settings
