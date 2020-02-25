@@ -1,0 +1,19 @@
+<templateSet group="java">
+  <template name="main" value="public static void main(String[] args){&#10;    $start$&#10;}" description="generate main mothed" toReformat="false" toShortenFQNames="true">
+    <variable name="start" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="sout" value="System.out.println($start$)" description="generate system.out.printfln()" toReformat="false" toShortenFQNames="true">
+    <variable name="start" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="logc" value="private final Logger log = LoggerFactory.getLogger(this.getClass());" description="generate log instance" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>

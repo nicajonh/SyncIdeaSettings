@@ -1,0 +1,11 @@
+<templateSet group="customedefine">
+  <template name="mc" value="**&#10; * @Title: $file_name$&#10; * @Package $package_name$&#10; * @Description: TODO&#10; * @author nicajonh&#10; * @date $date$ $time$&#10; * @version V1.0&#10; */" description="add comment" toReformat="false" toShortenFQNames="true">
+    <variable name="file_name" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="package_name" expression="currentPackage()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
